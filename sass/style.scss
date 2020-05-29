@@ -1,0 +1,96 @@
+//var
+$font-color-nav-menu-a: white;
+$font-size-nav-menu-a: 14px;
+$font-family-nav-menu-a: 'Montserrat',
+sans-serif;
+$font-color-nav__company-a:gold;
+$font-size-nav__company-a:30px;
+$font-family-nav__company-a:'Great Vibes',
+cursive,
+sans-serif;
+
+//global
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container__inside {
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+body {
+  //empty
+}
+
+//nav
+.nav {
+  //empty
+  height: 700px;
+  background-image: url("/images/header.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  // background-attachment: fixed;
+  background-size: cover;
+}
+
+.nav__menu {
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.nav__company {
+  margin-top: 34px;
+  position: absolute;
+  left: 10px;
+  width: 100px;
+
+  h1 {
+    //empty
+  }
+
+  a {
+    text-decoration: none;
+    color: $font-color-nav__company-a;
+    font-size: $font-size-nav__company-a;
+    font-family: $font-family-nav__company-a;
+  }
+}
+
+.nav__menu-ul {
+  margin-top: 47px;
+}
+
+.nav__menu-li {
+  display: inline-block;
+  list-style-type: none;
+  width: 105px;
+  text-align: right;
+}
+
+.nav__menu-a {
+  text-decoration: none;
+  color: $font-color-nav-menu-a;
+  font-size: $font-size-nav-menu-a;
+  font-family: $font-family-nav-menu-a;
+  text-transform: uppercase;
+  // font-weight: 700;
+}
+
+//header
+.header {}
+
+//services
+
+//portfolio
+
+//footer
