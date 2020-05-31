@@ -77,6 +77,30 @@ body {
   }
 }
 
+.nav__menu-hamburger {
+  display: none;
+}
+
+.nav__menu-hamburger-ul {
+  display: none;
+  position: absolute;
+  left: -220%;
+  top: -10px;
+  border: 1px solid white;
+  list-style-type: none;
+  color: white;
+  font-size: 30px;
+  background: gold;
+  line-height: 40px;
+  padding: 20px;
+  z-index: 0;
+}
+
+.nav__menu-hamburger-a {
+  text-decoration: none;
+  color: white;
+}
+
 .nav__menu-ul {
   margin-top: 47px;
 }
@@ -163,12 +187,13 @@ body {
   flex-direction: column;
   align-items: center;
   margin-bottom: 165px;
+  padding: 0 20px;
+  text-align: center;
 
   h1 {
     font-size: $font-size-services-title-h1;
     font-family: $font-family-services-title-h1;
     font-weight: 900;
-    text-align: center;
     text-transform: uppercase;
   }
 
@@ -234,14 +259,12 @@ body {
     text-align: center;
     line-height: 20px;
   }
-
-  // margin-top: 110px;
 }
 
-
-
-
 //portfolio
+.portfolio {
+  background: rgb(206, 206, 206);
+}
 
 //footer
 
@@ -252,8 +275,20 @@ body {
     position: absolute;
     left: 10%;
   }
+
   .nav__menu-ul {
     display: none;
+  }
+
+  .nav__menu-hamburger {
+    display: inline;
+    position: absolute;
+    z-index: 5;
+    left: 80%;
+    top: 30px;
+  }
+  .nav__menu-hamburger:hover>.nav__menu-hamburger-ul{
+    display: block;
   }
 
   .header__title {
@@ -272,14 +307,15 @@ body {
     flex-direction: column;
     align-items: center;
   }
+
   .services__icon-one {
     left: 158px;
   }
-  
+
   .services__icon-two {
     left: 158px;
   }
-  
+
   .services__icon-three {
     left: 162px;
   }

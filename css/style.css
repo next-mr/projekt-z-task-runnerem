@@ -42,6 +42,30 @@
   font-family: "Great Vibes", cursive, sans-serif;
 }
 
+.nav__menu-hamburger {
+  display: none;
+}
+
+.nav__menu-hamburger-ul {
+  display: none;
+  position: absolute;
+  left: -220%;
+  top: -10px;
+  border: 1px solid white;
+  list-style-type: none;
+  color: white;
+  font-size: 30px;
+  background: gold;
+  line-height: 40px;
+  padding: 20px;
+  z-index: 0;
+}
+
+.nav__menu-hamburger-a {
+  text-decoration: none;
+  color: white;
+}
+
 .nav__menu-ul {
   margin-top: 47px;
 }
@@ -132,13 +156,14 @@
   -ms-flex-align: center;
       align-items: center;
   margin-bottom: 165px;
+  padding: 0 20px;
+  text-align: center;
 }
 
 .services__title h1 {
   font-size: 39px;
   font-family: "Montserrat", sans-serif;
   font-weight: 900;
-  text-align: center;
   text-transform: uppercase;
 }
 
@@ -206,6 +231,10 @@
   line-height: 20px;
 }
 
+.portfolio {
+  background: #cecece;
+}
+
 @media (max-width: 992px) {
   .nav__menu {
     position: absolute;
@@ -213,6 +242,16 @@
   }
   .nav__menu-ul {
     display: none;
+  }
+  .nav__menu-hamburger {
+    display: inline;
+    position: absolute;
+    z-index: 5;
+    left: 80%;
+    top: 30px;
+  }
+  .nav__menu-hamburger:hover > .nav__menu-hamburger-ul {
+    display: block;
   }
   .header__title h1 {
     margin-top: 205px;
