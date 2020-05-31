@@ -70,8 +70,8 @@
 
 .header__shadow {
   position: absolute;
-  z-index: 0;
-  width: 1400px;
+  z-index: -1;
+  width: 100%;
   height: 700px;
   background-color: black;
   opacity: 0.4;
@@ -92,7 +92,7 @@
 .header__title h1 {
   margin-top: 250px;
   font-size: 39px;
-  font-family: "Aref Ruqaa", serif;
+  font-family: "Aref Ruqaa", sans-serif;
   text-transform: capitalize;
   text-align: center;
 }
@@ -120,7 +120,97 @@
   font-weight: 900;
 }
 
+.services {
+  margin-top: 110px;
+}
+
+.services__title {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  margin-bottom: 165px;
+}
+
+.services__title h1 {
+  font-size: 39px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.services__title p {
+  margin-top: 10px;
+  font-size: 16px;
+  font-family: "Aref Ruqaa", sans-serif;
+}
+
+.services__offer {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+}
+
+.services__circle-one,
+.services__circle-two,
+.services__circle-three {
+  position: absolute;
+  left: 40%;
+  top: -100px;
+}
+
+.services__icon-one,
+.services__icon-two,
+.services__icon-three {
+  position: absolute;
+  top: -83px;
+}
+
+.services__icon-one {
+  left: 142px;
+}
+
+.services__icon-two {
+  left: 142px;
+}
+
+.services__icon-three {
+  left: 148px;
+}
+
+.services__ecommerce,
+.services__responsive,
+.services__security {
+  position: relative;
+  width: 350px;
+  margin-bottom: 120px;
+}
+
+.services__ecommerce h2,
+.services__responsive h2,
+.services__security h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.services__ecommerce p,
+.services__responsive p,
+.services__security p {
+  text-align: center;
+  line-height: 20px;
+}
+
 @media (max-width: 992px) {
+  .nav__menu {
+    position: absolute;
+    left: 10%;
+  }
   .nav__menu-ul {
     display: none;
   }
@@ -130,6 +220,21 @@
   }
   .header__title h2 {
     font-size: 54px;
+  }
+  .services__offer {
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-align: center;
+        align-items: center;
+  }
+  .services__icon-one {
+    left: 158px;
+  }
+  .services__icon-two {
+    left: 158px;
+  }
+  .services__icon-three {
+    left: 162px;
   }
 }
 /*# sourceMappingURL=style.css.map */
