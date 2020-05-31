@@ -165,12 +165,14 @@
   font-family: "Montserrat", sans-serif;
   font-weight: 900;
   text-transform: uppercase;
+  color: black;
 }
 
 .services__title p {
   margin-top: 10px;
   font-size: 16px;
   font-family: "Aref Ruqaa", sans-serif;
+  color: #777777;
 }
 
 .services__offer {
@@ -220,19 +222,88 @@
 .services__ecommerce h2,
 .services__responsive h2,
 .services__security h2 {
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
   text-align: center;
   margin-bottom: 10px;
+  color: black;
 }
 
 .services__ecommerce p,
 .services__responsive p,
 .services__security p {
+  font-size: 14;
+  font-family: 'Aref Ruqaa', sans-serif;
   text-align: center;
   line-height: 20px;
+  color: #777777;
 }
 
 .portfolio {
-  background: #cecece;
+  background: #f7f7f7;
+}
+
+.portfolio__title h1 {
+  padding-top: 105px;
+  color: black;
+  font-size: 40px;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.portfolio__title p {
+  color: #777777;
+  font-size: 16px;
+  font-family: 'Aref Ruqaa', sans-serif;
+  text-align: center;
+  padding-bottom: 80px;
+}
+
+.portfolio__grid-img {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (290px)[auto-fill];
+      grid-template-columns: repeat(auto-fill, 290px);
+  grid-gap: 45px 35px;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+
+.portfolio_img-one-one,
+.portfolio_img-one-two,
+.portfolio_img-one-three,
+.portfolio_img-two-one,
+.portfolio_img-two-two,
+.portfolio_img-two-three {
+  background: white;
+  width: 290px;
+  height: 400px;
+}
+
+.portfolio_img-one-one h1,
+.portfolio_img-one-two h1,
+.portfolio_img-one-three h1,
+.portfolio_img-two-one h1,
+.portfolio_img-two-two h1,
+.portfolio_img-two-three h1 {
+  padding-top: 20px;
+  text-align: center;
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+  color: black;
+}
+
+.portfolio_img-one-one p,
+.portfolio_img-one-two p,
+.portfolio_img-one-three p,
+.portfolio_img-two-one p,
+.portfolio_img-two-two p,
+.portfolio_img-two-three p {
+  text-align: center;
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  color: #777777;
 }
 
 @media (max-width: 992px) {
