@@ -261,7 +261,7 @@
   padding-bottom: 80px;
 }
 
-.portfolio__grid-img {
+.portfolio__img-grid {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (290px)[auto-fill];
@@ -271,44 +271,19 @@
       justify-content: center;
 }
 
-.portfolio_img-one-one,
-.portfolio_img-one-two,
-.portfolio_img-one-three,
-.portfolio_img-two-one,
-.portfolio_img-two-two,
-.portfolio_img-two-three {
+.portfolio_img-box {
   background: white;
   width: 290px;
   height: 400px;
 }
 
-.portfolio_img-one-one img,
-.portfolio_img-one-one p,
-.portfolio_img-one-one h1,
-.portfolio_img-one-two img,
-.portfolio_img-one-two p,
-.portfolio_img-one-two h1,
-.portfolio_img-one-three img,
-.portfolio_img-one-three p,
-.portfolio_img-one-three h1,
-.portfolio_img-two-one img,
-.portfolio_img-two-one p,
-.portfolio_img-two-one h1,
-.portfolio_img-two-two img,
-.portfolio_img-two-two p,
-.portfolio_img-two-two h1,
-.portfolio_img-two-three img,
-.portfolio_img-two-three p,
-.portfolio_img-two-three h1 {
+.portfolio_img-box img,
+.portfolio_img-box p,
+.portfolio_img-box h1 {
   transition: all 0.6s;
 }
 
-.portfolio_img-one-one h1,
-.portfolio_img-one-two h1,
-.portfolio_img-one-three h1,
-.portfolio_img-two-one h1,
-.portfolio_img-two-two h1,
-.portfolio_img-two-three h1 {
+.portfolio_img-box h1 {
   padding-top: 25px;
   text-align: center;
   font-size: 18px;
@@ -316,51 +291,26 @@
   color: black;
 }
 
-.portfolio_img-one-one p,
-.portfolio_img-one-two p,
-.portfolio_img-one-three p,
-.portfolio_img-two-one p,
-.portfolio_img-two-two p,
-.portfolio_img-two-three p {
+.portfolio_img-box p {
   text-align: center;
   font-size: 14px;
   font-family: 'Montserrat', sans-serif;
   color: #777777;
 }
 
-.portfolio_img-one-one a,
-.portfolio_img-one-two a,
-.portfolio_img-one-three a,
-.portfolio_img-two-one a,
-.portfolio_img-two-two a,
-.portfolio_img-two-three a {
+.portfolio_img-box a {
   text-decoration: none;
 }
 
-.portfolio_img-one-one a img:hover,
-.portfolio_img-one-two a img:hover,
-.portfolio_img-one-three a img:hover,
-.portfolio_img-two-one a img:hover,
-.portfolio_img-two-two a img:hover,
-.portfolio_img-two-three a img:hover {
+.portfolio_img-box a img:hover {
   transform: scale(1.1, 1.1);
 }
 
-.portfolio_img-one-one a p:hover,
-.portfolio_img-one-two a p:hover,
-.portfolio_img-one-three a p:hover,
-.portfolio_img-two-one a p:hover,
-.portfolio_img-two-two a p:hover,
-.portfolio_img-two-three a p:hover {
+.portfolio_img-box a p:hover {
   transform: scale(1.1, 1.1);
 }
 
-.portfolio_img-one-one a h1:hover,
-.portfolio_img-one-two a h1:hover,
-.portfolio_img-one-three a h1:hover,
-.portfolio_img-two-one a h1:hover,
-.portfolio_img-two-two a h1:hover,
-.portfolio_img-two-three a h1:hover {
+.portfolio_img-box a h1:hover {
   transform: scale(1.1, 1.1);
 }
 

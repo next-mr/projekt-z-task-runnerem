@@ -296,19 +296,14 @@ body {
   }
 }
 
-.portfolio__grid-img {
+.portfolio__img-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, 290px);
   grid-gap: 45px 35px;
   justify-content: center;
 }
 
-.portfolio_img-one-one,
-.portfolio_img-one-two,
-.portfolio_img-one-three,
-.portfolio_img-two-one,
-.portfolio_img-two-two,
-.portfolio_img-two-three {
+.portfolio_img-box {
   background: white;
   width: 290px;
   height: 400px;
