@@ -8,6 +8,16 @@ $font-size-nav__company-a:30px;
 $font-family-nav__company-a:'Great Vibes',
 cursive,
 sans-serif;
+$font-color-header-title: white;
+$font-size-header-title-h1: 39px;
+$font-family-header-title-h1: 'Aref Ruqaa',
+serif;
+$font-size-header-title-h2: 74px;
+$font-family-header-title-h2: 'Montserrat',
+sans-serif;
+$font-size-header-title-a: 18px;
+$font-family-header-title-a: 'Montserrat',
+sans-serif;
 
 //global
 * {
@@ -32,13 +42,7 @@ body {
 
 //nav
 .nav {
-  //empty
-  height: 700px;
-  background-image: url("/images/header.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  // background-attachment: fixed;
-  background-size: cover;
+  height: 0;
 }
 
 .nav__menu {
@@ -46,6 +50,7 @@ body {
   display: flex;
   justify-content: flex-end;
   position: relative;
+  z-index: 2;
 }
 
 .nav__company {
@@ -83,14 +88,91 @@ body {
   font-size: $font-size-nav-menu-a;
   font-family: $font-family-nav-menu-a;
   text-transform: uppercase;
-  // font-weight: 700;
 }
 
 //header
-.header {}
+.header {
+  height: 700px;
+  background-image: url("/images/header.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.header__shadow {
+  position: absolute;
+  z-index: 0;
+  width: 1400px;
+  height: 700px;
+  background-color: black;
+  opacity: 0.4;
+}
+
+// .header::before{
+// filter: 
+// }
+
+.header__title {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: $font-color-header-title;
+
+  h1 {
+    margin-top: 250px;
+    font-size: $font-size-header-title-h1;
+    font-family: $font-family-header-title-h1;
+    text-transform: capitalize;
+    text-align: center;
+  }
+
+  h2 {
+    margin-top: 30px;
+    font-size: $font-size-header-title-h2;
+    font-family: $font-family-header-title-h2;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  a {
+    margin-top: 40px;
+    color: $font-color-header-title;
+    font-size: $font-size-header-title-a;
+    font-family: $font-family-header-title-a;
+    text-align: center;
+    text-decoration: none;
+    width: 240px;
+    padding: 20px 40px;
+    background: gold;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-weight: 900;
+  }
+}
 
 //services
 
 //portfolio
 
 //footer
+
+//media
+
+@media (max-width: 992px) {
+  .nav__menu-ul {
+    display: none;
+  }
+
+  .header__title {
+
+    h1 {
+      margin-top: 205px;
+      font-size: $font-size-header-title-h1 - 10px;
+    }
+
+    h2 {
+      font-size: $font-size-header-title-h2 - 20px;
+    }
+  }
+}
