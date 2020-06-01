@@ -1,4 +1,5 @@
 //var
+// nav
 $font-color-nav-menu-a: white;
 $font-size-nav-menu-a: 14px;
 $font-family-nav-menu-a: 'Montserrat',
@@ -8,6 +9,7 @@ $font-size-nav__company-a:30px;
 $font-family-nav__company-a:'Great Vibes',
 cursive,
 sans-serif;
+// header
 $font-color-header-title: white;
 $font-size-header-title-h1: 39px;
 $font-family-header-title-h1: 'Aref Ruqaa',
@@ -15,14 +17,44 @@ sans-serif;
 $font-size-header-title-h2: 74px;
 $font-family-header-title-h2: 'Montserrat',
 sans-serif;
+$font-color-header-title-a: rgb(119, 119, 119);
 $font-size-header-title-a: 18px;
 $font-family-header-title-a: 'Montserrat',
 sans-serif;
+//services
+$font-color-services-title-h1: black;
 $font-size-services-title-h1: 39px;
 $font-family-services-title-h1: 'Montserrat',
 sans-serif;
+$font-color-services-title-h2: black;
+$font-size-services-title-h2: 18px;
+$font-family-services-title-h2: 'Montserrat',
+sans-serif;
+$font-color-services-p: rgb(119, 119, 119);
 $font-size-services-p: 16px;
 $font-family-services-p: 'Aref Ruqaa',
+sans-serif;
+//portfolio
+$font-color-portfolio-title-h1:black;
+$font-size-portfolio-title-h1: 40px;
+$font-family-portfolio-title-h1: 'Montserrat',
+sans-serif;
+$font-color-portfolio-title-p: rgb(119, 119, 119);
+$font-size-portfolio-title-p: 16px;
+$font-family-portfolio-title-p: 'Aref Ruqaa',
+sans-serif;
+$font-color-portfolio-h2:black;
+$font-size-portfolio-h2: 18px;
+$font-family-portfolio-h2: 'Montserrat',
+sans-serif;
+$font-color-portfolio-p: rgb(119, 119, 119);
+$font-size-portfolio-p: 14px;
+$font-family-portfolio-p: 'Aref Ruqaa',
+sans-serif;
+// footer
+$font-color-footer-copy:black;
+$font-size-footer-copy: 14px;
+$font-family-footer-copy: 'Montserrat',
 sans-serif;
 
 //global
@@ -33,17 +65,13 @@ sans-serif;
 }
 
 .container__inside {
-  max-width: 940px;
   margin: 0 auto;
+  max-width: 940px;
 }
 
 .container {
-  max-width: 1400px;
   margin: 0 auto;
-}
-
-body {
-  //empty
+  max-width: 1400px;
 }
 
 //nav
@@ -61,13 +89,9 @@ body {
 
 .nav__company {
   margin-top: 34px;
+  width: 100px;
   position: absolute;
   left: 10px;
-  width: 100px;
-
-  h1 {
-    //empty
-  }
 
   a {
     text-decoration: none;
@@ -86,14 +110,14 @@ body {
   position: absolute;
   left: -220%;
   top: -10px;
+  z-index: 0;
+  padding: 20px;
+  background: gold;
   border: 1px solid white;
   list-style-type: none;
   color: white;
   font-size: 30px;
-  background: gold;
   line-height: 40px;
-  padding: 20px;
-  z-index: 0;
 }
 
 .nav__menu-hamburger-a {
@@ -108,8 +132,8 @@ body {
 .nav__menu-li {
   display: inline-block;
   list-style-type: none;
-  width: 105px;
   text-align: right;
+  width: 105px;
 }
 
 .nav__menu-a {
@@ -166,14 +190,14 @@ body {
     color: $font-color-header-title;
     font-size: $font-size-header-title-a;
     font-family: $font-family-header-title-a;
+    font-weight: 900;
     text-align: center;
     text-decoration: none;
+    text-transform: uppercase;
     width: 240px;
     padding: 20px 40px;
     background: gold;
     border-radius: 3px;
-    text-transform: uppercase;
-    font-weight: 900;
   }
 }
 
@@ -185,24 +209,23 @@ body {
 .services__title {
   display: flex;
   flex-direction: column;
-  align-items: center;
   margin-bottom: 165px;
   padding: 0 20px;
   text-align: center;
 
   h1 {
+    color: $font-color-services-title-h1;
     font-size: $font-size-services-title-h1;
     font-family: $font-family-services-title-h1;
     font-weight: 900;
     text-transform: uppercase;
-    color: black;
   }
 
   p {
     margin-top: 10px;
+    color: $font-color-services-p;
     font-size: $font-size-services-p;
     font-family: $font-family-services-p;
-    color: rgb(119, 119, 119);
   }
 }
 
@@ -247,21 +270,19 @@ body {
   margin-bottom: 120px;
 
   h2 {
-    font-size: 18px;
-    font-family: 'Montserrat',
-      sans-serif;
+    color: $font-color-services-title-h2;
+    font-size: $font-size-services-title-h2;
+    font-family: $font-family-services-title-h2;
     text-align: center;
     margin-bottom: 10px;
-    color: black;
   }
 
   p {
-    font-size: 14;
-    font-family: 'Aref Ruqaa',
-      sans-serif;
+    color: $font-color-services-p;
+    font-size: $font-size-services-p;
+    font-family: $font-family-services-p;
     text-align: center;
     line-height: 20px;
-    color: rgb(119, 119, 119);
   }
 }
 
@@ -274,17 +295,17 @@ body {
 .portfolio__title {
   h1 {
     padding-top: 105px;
-    color: black;
-    font-size: 40px;
-    font-family: 'Montserrat', sans-serif;
+    color: $font-color-portfolio-title-h1;
+    font-size: $font-size-portfolio-title-h1;
+    font-family: $font-family-portfolio-title-h1;
     text-align: center;
     text-transform: uppercase;
   }
 
   p {
-    color: rgb(119, 119, 119);
-    font-size: 16px;
-    font-family: 'Aref Ruqaa', sans-serif;
+    color: $font-color-portfolio-title-p;
+    font-size: $font-size-portfolio-title-p;
+    font-family: $font-family-portfolio-title-p;
     text-align: center;
     padding-bottom: 80px;
   }
@@ -304,25 +325,23 @@ body {
 
   img,
   p,
-  h1 {
+  h2 {
     transition: all 0.6s;
   }
 
-  h1 {
+  h2 {
     padding-top: 25px;
+    color: $font-color-portfolio-h2;
+    font-size: $font-size-portfolio-h2;
+    font-family: $font-family-portfolio-h2;
     text-align: center;
-    font-size: 18px;
-    font-family: 'Montserrat',
-      sans-serif;
-    color: black;
   }
 
   p {
+    color: $font-color-portfolio-p;
+    font-size: $font-size-portfolio-p;
+    font-family: $font-family-portfolio-p;
     text-align: center;
-    font-size: 14px;
-    font-family: 'Montserrat',
-      sans-serif;
-    color: rgb(119, 119, 119);
   }
 
   a {
@@ -337,13 +356,17 @@ body {
     transform: scale(1.1, 1.1);
   }
 
-  a h1:hover {
+  a h2:hover {
     transform: scale(1.1, 1.1);
   }
 }
 
 //footer
 .footer {
+  position: relative;
+}
+
+.footer__img {
   margin: 50px 0;
   display: flex;
   flex-direction: row;
@@ -361,12 +384,11 @@ body {
 }
 
 footer h1 {
-  color: rgb(119, 119, 119);
   position: absolute;
-  font-size: 14px;
-  font-family: 'Montserrat',
-    sans-serif;
-  ;
+  top: 12px;
+  color: $font-color-footer-copy;
+  font-size: $font-size-footer-copy;
+  font-family: $font-family-footer-copy;
 }
 
 //media 992
@@ -383,9 +405,9 @@ footer h1 {
   .nav__menu-hamburger {
     display: inline;
     position: absolute;
-    z-index: 5;
     left: 80%;
     top: 30px;
+    z-index: 5;
   }
 
   .nav__menu-hamburger:hover>.nav__menu-hamburger-ul {

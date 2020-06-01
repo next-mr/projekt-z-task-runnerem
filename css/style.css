@@ -5,13 +5,13 @@
 }
 
 .container__inside {
-  max-width: 940px;
   margin: 0 auto;
+  max-width: 940px;
 }
 
 .container {
-  max-width: 1400px;
   margin: 0 auto;
+  max-width: 1400px;
 }
 
 .nav {
@@ -30,9 +30,9 @@
 
 .nav__company {
   margin-top: 34px;
+  width: 100px;
   position: absolute;
   left: 10px;
-  width: 100px;
 }
 
 .nav__company a {
@@ -51,14 +51,14 @@
   position: absolute;
   left: -220%;
   top: -10px;
+  z-index: 0;
+  padding: 20px;
+  background: gold;
   border: 1px solid white;
   list-style-type: none;
   color: white;
   font-size: 30px;
-  background: gold;
   line-height: 40px;
-  padding: 20px;
-  z-index: 0;
 }
 
 .nav__menu-hamburger-a {
@@ -73,8 +73,8 @@
 .nav__menu-li {
   display: inline-block;
   list-style-type: none;
-  width: 105px;
   text-align: right;
+  width: 105px;
 }
 
 .nav__menu-a {
@@ -134,14 +134,14 @@
   color: white;
   font-size: 18px;
   font-family: "Montserrat", sans-serif;
+  font-weight: 900;
   text-align: center;
   text-decoration: none;
+  text-transform: uppercase;
   width: 240px;
   padding: 20px 40px;
   background: gold;
   border-radius: 3px;
-  text-transform: uppercase;
-  font-weight: 900;
 }
 
 .services {
@@ -153,26 +153,24 @@
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column;
-  -ms-flex-align: center;
-      align-items: center;
   margin-bottom: 165px;
   padding: 0 20px;
   text-align: center;
 }
 
 .services__title h1 {
+  color: black;
   font-size: 39px;
   font-family: "Montserrat", sans-serif;
   font-weight: 900;
   text-transform: uppercase;
-  color: black;
 }
 
 .services__title p {
   margin-top: 10px;
+  color: #777777;
   font-size: 16px;
   font-family: "Aref Ruqaa", sans-serif;
-  color: #777777;
 }
 
 .services__offer {
@@ -222,21 +220,21 @@
 .services__ecommerce h2,
 .services__responsive h2,
 .services__security h2 {
+  color: black;
   font-size: 18px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   text-align: center;
   margin-bottom: 10px;
-  color: black;
 }
 
 .services__ecommerce p,
 .services__responsive p,
 .services__security p {
-  font-size: 14;
-  font-family: 'Aref Ruqaa', sans-serif;
+  color: #777777;
+  font-size: 16px;
+  font-family: "Aref Ruqaa", sans-serif;
   text-align: center;
   line-height: 20px;
-  color: #777777;
 }
 
 .portfolio {
@@ -248,7 +246,7 @@
   padding-top: 105px;
   color: black;
   font-size: 40px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   text-align: center;
   text-transform: uppercase;
 }
@@ -256,7 +254,7 @@
 .portfolio__title p {
   color: #777777;
   font-size: 16px;
-  font-family: 'Aref Ruqaa', sans-serif;
+  font-family: "Aref Ruqaa", sans-serif;
   text-align: center;
   padding-bottom: 80px;
 }
@@ -279,23 +277,23 @@
 
 .portfolio_img-box img,
 .portfolio_img-box p,
-.portfolio_img-box h1 {
+.portfolio_img-box h2 {
   transition: all 0.6s;
 }
 
-.portfolio_img-box h1 {
+.portfolio_img-box h2 {
   padding-top: 25px;
-  text-align: center;
-  font-size: 18px;
-  font-family: 'Montserrat', sans-serif;
   color: black;
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
 }
 
 .portfolio_img-box p {
-  text-align: center;
-  font-size: 14px;
-  font-family: 'Montserrat', sans-serif;
   color: #777777;
+  font-size: 14px;
+  font-family: "Aref Ruqaa", sans-serif;
+  text-align: center;
 }
 
 .portfolio_img-box a {
@@ -310,11 +308,15 @@
   transform: scale(1.1, 1.1);
 }
 
-.portfolio_img-box a h1:hover {
+.portfolio_img-box a h2:hover {
   transform: scale(1.1, 1.1);
 }
 
 .footer {
+  position: relative;
+}
+
+.footer__img {
   margin: 50px 0;
   display: -ms-flexbox;
   display: flex;
@@ -325,20 +327,21 @@
   position: relative;
 }
 
-.footer a img {
+.footer__img a img {
   padding: 0 5px;
   transition: all 0.6s;
 }
 
-.footer a img:hover {
+.footer__img a img:hover {
   transform: scale(1.2, 1.2);
 }
 
 footer h1 {
-  color: #777777;
   position: absolute;
+  top: 12px;
+  color: black;
   font-size: 14px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 @media (max-width: 992px) {
@@ -352,9 +355,9 @@ footer h1 {
   .nav__menu-hamburger {
     display: inline;
     position: absolute;
-    z-index: 5;
     left: 80%;
     top: 30px;
+    z-index: 5;
   }
   .nav__menu-hamburger:hover > .nav__menu-hamburger-ul {
     display: block;
